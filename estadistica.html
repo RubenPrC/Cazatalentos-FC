@@ -1,0 +1,57 @@
+<style>
+  
+/* Tabla de estadísticas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+td {
+    background: #ecf0f1;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .players {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
+</style>
+        <section class="estadisticas">
+            <h2>Estadísticas del Club</h2>
+            <table>
+                <tr>
+                    <th>Partidos Jugados</th>
+                    <th>Victorias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                    <th>Goles 
+                   Anotados</th>
+                  <th>Goles encajados
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>99</td>
+                    <td>68</td>
+                    <td>33</td>
+                    <td>289</td>
+                  <td>213</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
+
