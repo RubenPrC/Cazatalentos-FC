@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cazatalentos FC</title>
   <link rel="stylesheet" href="styles.css">
+<body>
 <style>
 /* Estilos generales */
 * {
@@ -50,8 +51,37 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: underline;
 }
-<style>
-   </head>
+  
+/* Tabla de estadísticas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+td {
+    background: #ecf0f1;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .players {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
+</style>
+  </head>
   <body>
 <section>
   <!-- Cabecera -->
@@ -67,7 +97,6 @@ header nav ul li a:hover {
     </nav>
   </header>
 </section>
-
 /* Plantilla de jugadores */
 .players {
     display: grid;
