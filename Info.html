@@ -1,4 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cazatalentos FC</title>
+  <link rel="stylesheet" href="styles.css">
+<body>
+<style>
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+/* Cabecera */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+  
+/* Tabla de estadísticas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+td {
+    background: #ecf0f1;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .players {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
+
+
+
+
+
+
+  <style>
+   
+
+/* Plantilla de jugadores */
+.players {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Tarjetas de jugadores */
+.player-card {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #ddd;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.player-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.player-card:hover {
+    background: #bdc3c7;
+    transform: scale(1.05);
+}
+  
+</style>
+  </head>
+  <body>
+<section>
+  <!-- Cabecera -->
+  <header>
+    <div class="logo">
+      <img src="_f194cd11-9f09-446a-af9d-5e4508a6d0f9.jpg" alt="Logo Cazatalentos FC">
+    </div>
+    <h1>Cazatalentos FC</h1>
+       <nav>
+        <a href="info.html">Información</a>
+        <a href="plantilla.html">Plantilla</a>
+        <a href="estadistica.html">Estadísticas</a>
+    </nav>
+  </header>
+  
+</section>
     <div class="container">
         <section class="info">
             <h2>Información del Club</h2>
