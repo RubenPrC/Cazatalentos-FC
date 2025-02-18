@@ -5,189 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cazatalentos FC</title>
   <link rel="stylesheet" href="styles.css">
-<body>
-<style>
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-/* Cabecera */
+    /* Cabecera */
     header {
       background-color: #333;
       color: white;
       padding: 20px;
       text-align: center;
-}
-
-header .logo img {
-  width: 150px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 10px 0;
-}
-
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-  
-/* Tabla de estadísticas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-th {
-    background: #34495e;
-    color: white;
-}
-
-td {
-    background: #ecf0f1;
-}
-
-/* Diseño responsivo */
-@media screen and (max-width: 768px) {
-    .players {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-  }
 
+    header .logo img {
+      width: 150px;
+    }
 
+    header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
 
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
+    header nav ul li {
+      display: inline;
+    }
 
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-  <style>
-   
+    header nav ul li a:hover {
+      background-color: #16a085;
+    }
 
-/* Plantilla de jugadores */
-.players {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 10px;
-}
+    /* Plantilla de jugadores */
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
 
-/* Tarjetas de jugadores */
-.player-card {
-    background: #ecf0f1;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px solid #ddd;
-    transition: transform 0.3s, background 0.3s;
-}
+    /* Tarjetas de jugadores */
+    .player-card {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 2px solid #ddd;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.player-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+    .player-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
 
-.player-card:hover {
-    background: #bdc3c7;
-    transform: scale(1.05);
-}
-  
-</style>
-  </head>
-  <body>
-<section>
-  <!-- Cabecera -->
+    .player-card:hover {
+      background: #bdc3c7;
+      transform: scale(1.05);
+    }
+
+    .player-card h3 {
+      font-size: 1.3rem;
+      margin: 10px 0;
+    }
+
+    .player-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Diseño responsivo */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header nav ul li {
+        display: block;
+        margin: 5px 0;
+      }
+
+      .players {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+    }
+
+  </style>
+</head>
+<body>
   <header>
     <div class="logo">
       <img src="_f194cd11-9f09-446a-af9d-5e4508a6d0f9.jpg" alt="Logo Cazatalentos FC">
     </div>
     <h1>Cazatalentos FC</h1>
-       <nav>
-         <a href="index.html">Inicio</a>
-        <a href="info.html">Información</a>
-        <a href="plantilla.html">Plantilla</a>
-        <a href="estadistica.html">Estadísticas</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="plantilla.html">Plantilla</a></li>
+        <li><a href="estadistica.html">Estadísticas</a></li>
+      </ul>
     </nav>
   </header>
-  
-</section>
 
-<section class="plantilla">
-            <h2>Plantilla destcada</h2>
-            <div class="players">
-                <div class="player-card">
-                    <img src="_a21748f0-7efa-48a0-917e-6d9219f8cb81.jpeg" alt="Jugador 2">
-                    <h3>Patividis</h3>
-                    <p>Delantero centro</p>
-                </div>
-                <div class="player-card">
-                    <img src="_28e5e5b1-f7f8-4e65-8f7b-b6be4b50cf1e.jpeg" alt="Jugador 11">
-                    <h3>Indalecio</h3>
-                    <p>Media punta</p>
-                </div>
-                <div class="player-card">
-                    <img src="_259006b3-6a0e-4c59-9777-cfd9c3862f53.jpeg" alt="Jugador 93">
-                    <h3>El fary</h3>
-                    <p>Extremo derecho</p>
-                </div>
-                <div class="player-card">
-                    <img src="_1b96b796-0a77-4705-bc2a-67921dfaa46d.jpeg" alt="Jugador 8">
-                    <h3>Popeyes</h3>
-                    <p>Mediocentro</p>
-                </div>
-                <div class="player-card">
-              <img src="_105781c5-68e7-40c1-b0a8-595a48d159d5.jpeg" alt="Jugador 20">
-                    <h3>Joao Pedro</h3>
-                    <p>Extremo derecho</p>
-                </div>
-              
-                <div class="player-card">
-                    <img src="_d32cd945-8179-4bee-932a-4638cc2b6d1c.jpeg" alt="Jugador 4">
-                    <h3>Narizón</h3>
-                    <p>Defensa central</p>
-                </div>
-             
-              <div class="player-card">
-          <img src="_9bd9f552-870b-40f3-8a02-9e70edc93696.jpeg" alt="Jugador 1">
-                    <h3>Jesús Garcia</h3>
-                    <p>Portero</p>
-                </div>
-              
-                <div class="player-card">
-                    <img src="_49f405ea-3fac-45e1-902c-e718baf70f48.jpeg" alt="Jugador 69">
-                    <h3>Aspavientos</h3>
-                    <p>Lateral derecho</p>
-                </div>
-               <div class="player-card">
-          <img src="_cd8b9ff9-6522-4c14-9f95-b5dfcfd606dd.jpeg" alt="Jugador 14">
-                    <h3>Gueterres</h3>
-                    <p>Extremo izquierdo</p>
-                </div>
-              
-        </section>
+  <section class="plantilla">
+    <h2>Plantilla Destacada</h2>
+    <div class="players">
+      <div class="player-card">
+        <img src="_a21748f0-7efa-48a0-917e-6d9219f8cb81.jpeg" alt="Jugador 2">
+        <h3>Patividis</h3>
+        <p>Delantero centro</p>
+      </div>
+      <div class="player-card">
+        <img src="_28e5e5b1-f7f8-4e65-8f7b-b6be4b50cf1e.jpeg" alt="Jugador 11">
+        <h3>Indalecio</h3>
+        <p>Media punta</p>
+      </div>
+      <div class="player-card">
+        <img src="_259006b3-6a0e-4c59-9777-cfd9c3862f53.jpeg" alt="Jugador 93">
+        <h3>El Fary</h3>
+        <p>Extremo derecho</p>
+      </div>
+      <div class="player-card">
+        <img src="_1b96b796-0a77-4705-bc2a-67921dfaa46d.jpeg" alt="Jugador 8">
+        <h3>Popeyes</h3>
+        <p>Mediocentro</p>
+      </div>
+      <div class="player-card">
+        <img src="_105781c5-68e7-40c1-b0a8-595a48d159d5.jpeg" alt="Jugador 20">
+        <h3>Joao Pedro</h3>
+        <p>Extremo derecho</p>
+      </div>
+      <div class="player-card">
+        <img src="_d32cd945-8179-4bee-932a-4638cc2b6d1c.jpeg" alt="Jugador 4">
+        <h3>Narizón</h3>
+        <p>Defensa central</p>
+      </div>
+      <div class="player-card">
+        <img src="_9bd9f552-870b-40f3-8a02-9e70edc93696.jpeg" alt="Jugador 1">
+        <h3>Jesús Garcia</h3>
+        <p>Portero</p>
+      </div>
+      <div class="player-card">
+        <img src="_49f405ea-3fac-45e1-902c-e718baf70f48.jpeg" alt="Jugador 69">
+        <h3>Aspavientos</h3>
+        <p>Lateral derecho</p>
+      </div>
+      <div class="player-card">
+        <img src="_cd8b9ff9-6522-4c14-9f95-b5dfcfd606dd.jpeg" alt="Jugador 14">
+        <h3>Gueterres</h3>
+        <p>Extremo izquierdo</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
