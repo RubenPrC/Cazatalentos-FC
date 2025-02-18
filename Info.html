@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,63 +51,38 @@
       text-decoration: underline;
     }
 
-    /* Tabla de estadísticas */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th, td {
-      padding: 10px;
+    /* Contenedor de la sección de información */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      border: 1px solid #ddd;
+      padding: 50px 20px;
     }
 
-    th {
-      background: #34495e;
-      color: white;
+    /* Sección de Información */
+    .info {
+      margin-bottom: 20px;
     }
 
-    td {
-      background: #ecf0f1;
+    .info h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
-    /* Diseño responsivo */
-    @media screen and (max-width: 768px) {
-      .players {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      }
+    .info p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
     }
 
-    /* Plantilla de jugadores */
-    .players {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 15px;
-      padding: 10px;
+    /* Imagen */
+    .container img {
+      width: 500px;
+      height: 400px;
+      object-fit: cover;
     }
 
-    /* Tarjetas de jugadores */
-    .player-card {
-      background: #ecf0f1;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      border: 2px solid #ddd;
-      transition: transform 0.3s, background 0.3s;
-    }
-
-    .player-card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
-
-    .player-card:hover {
-      background: #bdc3c7;
-      transform: scale(1.05);
-    }
   </style>
 </head>
 <body>
@@ -140,9 +114,10 @@
     </section>
     
     <section>
-      <img src="_f194cd11-9f09-446a-af9d-5e4508a6d0f9.jpg" alt="Imagen del club" width="500" height="400">
+      <img src="_f194cd11-9f09-446a-af9d-5e4508a6d0f9.jpg" alt="Imagen del club">
     </section>
   </div>
 
 </body>
 </html>
+
